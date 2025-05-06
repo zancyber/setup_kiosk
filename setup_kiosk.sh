@@ -10,16 +10,16 @@ echo "=== Install Mir Kiosk dan WPE WebKit ==="
 sudo snap install mir-kiosk
 sudo snap install wpe-webkit-mir-kiosk
 
-echo "=== Set URL kiosk ke https://localhost:8080 ==="
-sudo snap set wpe-webkit-mir-kiosk url="https://localhost:8080"
+echo "=== Set URL kiosk ke https://youtube.com ==="
+sudo snap set wpe-webkit-mir-kiosk url="https://youtube.com"
 
-# Jika ingin orientasi portrait, uncomment baris di bawah:
-# echo "=== Set display ke mode portrait ==="
-# sudo snap set mir-kiosk display-config='{
-#   "display": {
-#     "orientation": "right"
-#   }
-# }'
+#Jika ingin orientasi portrait, uncomment baris di bawah:
+ echo "=== Set display ke mode portrait ==="
+ sudo snap set mir-kiosk display-config='{
+   "display": {
+     "orientation": "right"
+   }
+ }'
 
 echo "=== Konfigurasi autostart & snap behavior ==="
 sudo snap set system refresh.retain=2
